@@ -19,7 +19,7 @@ st.write("Predict if an order will be canceled based on order details.")
 st.header("Enter Order Details:")
 
 # Numeric Inputs
-order_amount = st.number_input("Order Amount ($)", min_value=0.0, max_value=500.0, value=50.0, step=1.0)
+order_amount = st.number_input("Order Amount ($)", min_value=0.0, value=50.0, step=1.0)  # Removed max_value
 number_of_items = st.number_input("Number of Items", min_value=1, max_value=50, value=5, step=1)
 distance_km = st.number_input("Distance (km)", min_value=0.0, max_value=50.0, value=5.0, step=0.1)
 customer_rating = st.number_input("Customer Rating (1-5)", min_value=1.0, max_value=5.0, value=3.0, step=0.1)
