@@ -27,7 +27,6 @@ st.markdown("""
         text-align: center;
         color: white;
     }
-    
     .main-header h1 {
         color: white;
         font-size: 2.5rem;
@@ -166,7 +165,7 @@ st.markdown("""
 # -----------------------
 # User Inputs Section
 # -----------------------
-st.markdown('<div class="input-section">', unsafe_allow_html=True)
+#st.markdown('<div class="input-section">', unsafe_allow_html=True)
 st.markdown("### 📝 Order Information")
 
 # Create columns for better layout
