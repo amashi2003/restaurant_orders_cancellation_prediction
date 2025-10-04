@@ -176,7 +176,7 @@ with col1:
     order_amount = st.number_input(
         "💰 Order Amount ($)", 
         min_value=0.0, 
-        value=50.0, 
+        value=0.0, 
         step=1.0,
         help="Total amount of the order in dollars"
     )
@@ -184,7 +184,7 @@ with col1:
         "📦 Number of Items", 
         min_value=1, 
         max_value=50, 
-        value=5, 
+        value=1, 
         step=1,
         help="Total number of items in the order"
     )
@@ -192,7 +192,7 @@ with col1:
         "🚚 Distance (km)", 
         min_value=0.0, 
         max_value=50.0, 
-        value=5.0, 
+        value=0.0, 
         step=0.1,
         help="Delivery distance in kilometers"
     )
@@ -203,7 +203,7 @@ with col2:
         "⭐ Customer Rating (1-5)", 
         min_value=1.0, 
         max_value=5.0, 
-        value=3.0, 
+        value=1.0, 
         step=0.1,
         help="Customer's average rating"
     )
@@ -219,7 +219,7 @@ with col2:
         "⏱️ Delivery Duration (minutes)", 
         min_value=1, 
         max_value=200, 
-        value=30, 
+        value=1, 
         step=1,
         help="Estimated delivery time in minutes"
     )
@@ -231,14 +231,14 @@ col3, col4 = st.columns(2)
 with col3:
     delivery_type = st.selectbox(
         "🚚 Delivery Type", 
-        ["home delivery", "pick-up"],
+        ["", "home delivery", "pick-up"],
         help="Choose delivery method"
     )
 
 with col4:
     day_of_week = st.selectbox(
         "📅 Day of Week", 
-        ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
         help="Day when the order is placed"
     )
 
